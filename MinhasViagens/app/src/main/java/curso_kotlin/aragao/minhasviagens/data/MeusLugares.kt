@@ -1,4 +1,4 @@
-package curso_kotlin.aragao.minhasviagens
+package curso_kotlin.aragao.minhasviagens.data
 
 class MeusLugares (
     val nomeDoLugar: String,

@@ -1,4 +1,4 @@
-package curso_kotlin.aragao.minhasviagens
+package curso_kotlin.aragao.minhasviagens.view
 
 import android.os.Bundle
 import android.util.Log
@@ -10,6 +10,8 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
+import curso_kotlin.aragao.minhasviagens.data.MeusLugares
+import curso_kotlin.aragao.minhasviagens.R
 import curso_kotlin.aragao.minhasviagens.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
