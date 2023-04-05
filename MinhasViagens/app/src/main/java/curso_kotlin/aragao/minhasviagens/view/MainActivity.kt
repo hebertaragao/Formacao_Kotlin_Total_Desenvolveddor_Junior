@@ -23,16 +23,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         val paris = MeusLugares("Luvre", "Visitar o quadro Monalisa");
-        criarLugar(paris)
+        incluirLugar(paris)
 
         val barcelona = MeusLugares("Sagrada Família", "É uma Igreja famosa");
-        criarLugar(barcelona)
+        incluirLugar(barcelona)
 
         val victoria = MeusLugares("victoria Station", "É um prédio histórico");
-        criarLugar(victoria)
+        incluirLugar(victoria)
 
         val bonito = MeusLugares("Gruta Lagoa Azul", "Paraíso ecológico do pantanal MS");
-        criarLugar(bonito)
+        incluirLugar(bonito)
 
 
         // Log.d("AppKotlin", "2 Meu lugar ${barcelona.nomeDoLugar} ${barcelona.justificativa}")
@@ -81,6 +81,6 @@ class MainActivity : AppCompatActivity() {
         return true
     }
 
-    fun criarLugar(meusLugares: MeusLugares) {
+    fun incluirLugar(meusLugares: MeusLugares) {
         Log.e("AppKotlin", "Objeto: Meu lugar ${meusLugares.nomeDoLugar} ${meusLugares.justificativa}")
     }
