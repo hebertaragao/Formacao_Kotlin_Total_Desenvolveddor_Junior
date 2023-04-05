@@ -40,7 +40,8 @@ class MainActivity : AppCompatActivity() {
         // Log.w("AppKotlin", "3 Meu lugar ${victoria.nomeDoLugar} ${victoria.justificativa}")
         // Log.v("AppKotlin", "5 Meu lugar ${victoria.nomeDoLugar} ${victoria.justificativa}")
 
-        deletarLugar(5)
+        //deletarLugar(5)
+        alterarLugar(3)
         // Log.v("AppKotlin", "4 Meu lugar ${bonito.nomeDoLugar} ${bonito.justificativa}")
 
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -93,4 +94,9 @@ class MainActivity : AppCompatActivity() {
 
         //Regra de negócio
      Log.i("AppKotlin", "Item da lista #$numeroItem deletado com sucesso.")
+    }
+
+    fun alterarLugar(numeroItem: Int){
+        //Regra de negócio
+     Log.i("AppKotlin", "Item da lista #$numeroItem alterado com sucesso.")
     }
