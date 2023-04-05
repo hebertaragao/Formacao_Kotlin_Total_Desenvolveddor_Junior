@@ -35,8 +35,12 @@ class MainActivity : AppCompatActivity() {
         incluirLugar(bonito)
 
 
+        // Log.d("AppKotlin", "1 Meu lugar ${paris.nomeDoLugar} ${paris.justificativa}")
         // Log.d("AppKotlin", "2 Meu lugar ${barcelona.nomeDoLugar} ${barcelona.justificativa}")
         // Log.w("AppKotlin", "3 Meu lugar ${victoria.nomeDoLugar} ${victoria.justificativa}")
+        // Log.v("AppKotlin", "5 Meu lugar ${victoria.nomeDoLugar} ${victoria.justificativa}")
+
+        deletarLugar(5)
         // Log.v("AppKotlin", "4 Meu lugar ${bonito.nomeDoLugar} ${bonito.justificativa}")
 
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -77,10 +81,16 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
-    fun nomeDoMetodo() : Boolean{
+    fun nomeDoMetodo(): Boolean {
         return true
-    }
+}
 
     fun incluirLugar(meusLugares: MeusLugares) {
-        Log.e("AppKotlin", "Objeto: Meu lugar ${meusLugares.nomeDoLugar} ${meusLugares.justificativa}")
+     Log.e("AppKotlin", "Objeto: Meu lugar ${meusLugares.nomeDoLugar} ${meusLugares.justificativa}")
+}
+
+    fun deletarLugar(numeroItem: Int){
+
+        //Regra de negócio
+     Log.i("AppKotlin", "Item da lista #$numeroItem deletado com sucesso.")
     }
