@@ -1,6 +1,7 @@
 package curso_kotlin.aragao.minhasviagens
 
 import android.os.Bundle
+import android.util.Log
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -18,6 +19,16 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        val paris = MeusLugares("Luvre", "Visitar o quadro Monalisa");
+        val barcelona = MeusLugares("Sagrada Família", "É uma Igreja famosa");
+        val victoria = MeusLugares("victoria Station", "É um prédio histórico");
+        val bonito = MeusLugares("Gruta Lagoa Azul", "Paraíso ecológico do pantanal MS");
+
+        Log.e("AppKotlin", "1 Meu lugar ${paris.nomeDoLugar} ${paris.justificativa}")
+        Log.d("AppKotlin", "2 Meu lugar ${barcelona.nomeDoLugar} ${barcelona.justificativa}")
+        Log.w("AppKotlin", "3 Meu lugar ${victoria.nomeDoLugar} ${victoria.justificativa}")
+        Log.v("AppKotlin", "4 Meu lugar ${bonito.nomeDoLugar} ${bonito.justificativa}")
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
