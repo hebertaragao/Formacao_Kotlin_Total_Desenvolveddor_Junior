@@ -23,14 +23,21 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         val paris = MeusLugares("Luvre", "Visitar o quadro Monalisa");
-        val barcelona = MeusLugares("Sagrada Família", "É uma Igreja famosa");
-        val victoria = MeusLugares("victoria Station", "É um prédio histórico");
-        val bonito = MeusLugares("Gruta Lagoa Azul", "Paraíso ecológico do pantanal MS");
+        criarLugar(paris)
 
-        Log.e("AppKotlin", "1 Meu lugar ${paris.nomeDoLugar} ${paris.justificativa}")
-        Log.d("AppKotlin", "2 Meu lugar ${barcelona.nomeDoLugar} ${barcelona.justificativa}")
-        Log.w("AppKotlin", "3 Meu lugar ${victoria.nomeDoLugar} ${victoria.justificativa}")
-        Log.v("AppKotlin", "4 Meu lugar ${bonito.nomeDoLugar} ${bonito.justificativa}")
+        val barcelona = MeusLugares("Sagrada Família", "É uma Igreja famosa");
+        criarLugar(barcelona)
+
+        val victoria = MeusLugares("victoria Station", "É um prédio histórico");
+        criarLugar(victoria)
+
+        val bonito = MeusLugares("Gruta Lagoa Azul", "Paraíso ecológico do pantanal MS");
+        criarLugar(bonito)
+
+
+        // Log.d("AppKotlin", "2 Meu lugar ${barcelona.nomeDoLugar} ${barcelona.justificativa}")
+        // Log.w("AppKotlin", "3 Meu lugar ${victoria.nomeDoLugar} ${victoria.justificativa}")
+        // Log.v("AppKotlin", "4 Meu lugar ${bonito.nomeDoLugar} ${bonito.justificativa}")
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -69,3 +76,11 @@ class MainActivity : AppCompatActivity() {
                 || super.onSupportNavigateUp()
     }
 }
+
+    fun nomeDoMetodo() : Boolean{
+        return true
+    }
+
+    fun criarLugar(meusLugares: MeusLugares) {
+        Log.e("AppKotlin", "Objeto: Meu lugar ${meusLugares.nomeDoLugar} ${meusLugares.justificativa}")
+    }
